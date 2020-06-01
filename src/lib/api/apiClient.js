@@ -41,4 +41,10 @@ export const DELETE = (url) => {
         .delete(url);
 }
 
-export default apiClient;
+export const SET_AUTH_TOKEN = (token) => {
+    apiClient.defaults.headers.common['jwt-header'] = token
+}
+
+export const DELETE_AUTH_TOKEN = () => {
+    delete apiClient.defaults.headers.common['jwt-header']
+}
