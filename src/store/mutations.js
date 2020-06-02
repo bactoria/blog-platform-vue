@@ -14,4 +14,8 @@ export default {
         state.LOGIN_USER_PWD = payload
     },
 
+    [Const.SET_POSTS]: (state, payload) => {
+        state.posts = payload
+    },
+
 }

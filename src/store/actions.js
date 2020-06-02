@@ -1,5 +1,6 @@
 import Const from './constant'
-import { login, logout } from '../lib/api/auth/auth'
+import { login, logout } from '../lib/api/auth'
+import { fetchPosts } from '../lib/api/post'
 
 export default {
     [Const.AUTH_LOGIN]: ({ state, commit }) => {
@@ -18,5 +19,9 @@ export default {
             commit(Const.AUTH_LOGOUT)
             resolve()
         })
+    },
+    [Const.FETCH_POSTS]: async ({ commit }) => {
+        const data = await fetchPosts()
+        commit(Const.SET_POSTS, data.content)
     }
 }

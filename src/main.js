@@ -5,6 +5,9 @@ import store from './store'
 import { SET_AUTH_TOKEN } from './lib/api/apiClient'
 import Const from './store/constant'
 
+import Fragment from 'vue-fragment'
+Vue.use(Fragment.Plugin)
+
 Vue.config.productionTip = false
 
 const token = localStorage.getItem('jwt-token')

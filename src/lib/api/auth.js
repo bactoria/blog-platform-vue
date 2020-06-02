@@ -1,4 +1,4 @@
-import { POST, SET_AUTH_TOKEN, DELETE_AUTH_TOKEN } from '../apiClient'
+import { POST, SET_AUTH_TOKEN, DELETE_AUTH_TOKEN } from './apiClient'
 
 export const login = async (userId, password) => {
     const requestDto = {
