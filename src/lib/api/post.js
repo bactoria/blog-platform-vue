@@ -6,3 +6,10 @@ export const fetchPosts = async (pageNum) => {
             return res.data
         })
 }
+
+export const fetchPostDetail = async (postId) => {
+    return GET('/post/'+postId)
+        .then(res => {
+            return res
+        })
+}

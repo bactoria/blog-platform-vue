@@ -10,5 +10,6 @@ export default {
 
     FETCH_POSTS: "FETCH_POSTS",
     SET_POSTS: "SET_POSTS",
+    FETCH_POST_DETAIL: "FETCH_POST_DETAIL",
 
 }

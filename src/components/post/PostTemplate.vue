@@ -1,6 +1,6 @@
 <template>
     <div class="root">
-        <div class="post" v-for="post in posts" >
+        <div class="post" v-for="post in posts" @click="postDetail(post.postId)">
             <PostCard :post="post"> </PostCard>
         </div>
     </div>
@@ -20,8 +20,11 @@
         },
         methods: {
             ...mapActions({
-                fetchPosts: 'FETCH_POSTS'
+                fetchPosts: 'FETCH_POSTS',
             }),
+            postDetail(postId) {
+                this.$router.push('/post/' + postId)
+            },
         },
         mounted() {
             this.fetchPosts()

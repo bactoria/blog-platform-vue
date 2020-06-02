@@ -6,9 +6,13 @@
 </template>
 
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+  @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 
   #app {
     text-align: center;
+    font-family: 'Lato', 'Nanum Gothic';
+    font-weight: 500;
   }
 
   a, u {
@@ -22,7 +26,7 @@
   }
 
   .router {
-    left: 20  vw;
+    left: 20vw;
     width: 60vw;
     margin: auto;
   }
