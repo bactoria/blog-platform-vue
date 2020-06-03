@@ -33,9 +33,12 @@
 </script>
 
 <style scoped>
+    @import '/src/style/markdown-custom.scss';
+
     .post {
         padding: 3vh;
     }
+
     .post:nth-last-child(1) {
         margin-bottom: 0;
     }

@@ -1,5 +1,5 @@
 {
-  "name": "blog-platform-vue",
+  "name": "blog-platform-vue2",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,11 +9,11 @@
   "dependencies": {
     "axios": "^0.19.2",
     "babel-runtime": "^6.26.0",
-    "core-js": "^3.6.5",
-    "vue": "^2.6.11",
     "vue-fixed-header": "^3.2.14",
     "vue-fragment": "^1.5.1",
     "vue-markdown": "^2.2.4",
+    "core-js": "^3.6.5",
+    "vue": "^2.6.11",
     "vue-router": "^3.2.0",
     "vuex": "^3.4.0"
   },
@@ -22,6 +22,8 @@
     "@vue/cli-plugin-router": "~4.4.0",
     "@vue/cli-plugin-vuex": "~4.4.0",
     "@vue/cli-service": "~4.4.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.2",
     "vue-template-compiler": "^2.6.11"
   }
 }

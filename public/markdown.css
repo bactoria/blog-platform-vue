@@ -1,0 +1,107 @@
+
+#markdown {
+    text-align: left;
+    line-height: 1.8;
+}
+
+#markdown hr {
+    margin: 4em auto;
+    width: 95%;
+    border: 1px solid rgb(235, 235, 235);
+}
+
+/*> 구문*/
+#markdown blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+
+#markdown blockquote:before {
+    color: #ccc;
+    content: "\201C";
+    font-size: 3em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+#markdown blockquote p {
+    display: inline;
+}
+
+/*이미지 크기 조정*/
+#markdown p img {
+    max-width: 80%;
+}
+
+/* **strong** */
+#markdown strong {
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 0.2em;
+}
+
+/* `` */
+#markdown p code {
+    color: rgb(247,45,116);
+    border-radius: 0.4em;
+    background-color: rgba(200,200,200,0.1);
+    padding: 0.4em;
+    font-weight: bolder;
+    font-size: 1.1em;
+}
+
+#markdown p a {
+    color: #FF7F50 !important;
+    font-weight: bold;
+}
+
+
+/* 해시태그(#) 사이즈 조정 */
+
+#markdown h1 {
+    line-height: 2.5em;
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;
+    font-size: 2.5em;
+}
+
+
+#markdown h2::before {
+    content: url('favicon.ico');
+}
+
+
+#markdown h2 {
+    line-height: 2em;
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;
+    font-size: 2.0em;
+}
+
+#markdown h3 {
+    line-height: 1.5em;
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;
+    font-size: 1.6em;
+}
+
+#markdown h4 {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 1.2em;
+}
+
+#markdown ul li:before {
+    content: '';
+    display: inline-block;
+    height: 25px;
+    width: 40px;
+    background-image: url('check.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: -40px;
+}
+

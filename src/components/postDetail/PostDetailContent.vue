@@ -1,29 +1,21 @@
 <template>
     <div class="root">
-        <div class="content">
-            <vue-markdown :source="content"></vue-markdown>
-        </div>
+        <markdown-viewer :source="content"></markdown-viewer>
     </div>
 </template>
 
 <script>
-    import VueMarkdown from 'vue-markdown'
+    import MarkdownViewer from "../markdown/MarkdownViewer";
 
     export default {
         name: "PostDetailContent",
         props: ['content'],
         components: {
-            VueMarkdown
+            MarkdownViewer,
         },
     }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
     .root {}
-    .content {
-        font-size: 1.5em;
-        padding: 2em;
-        text-align: left;
-    }
-
 </style>
