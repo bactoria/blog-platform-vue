@@ -1,7 +1,7 @@
 <template>
     <div>
         <PostDetailTitle :title="post.title"></PostDetailTitle>
-        <PostDetailWriter :username="post.writerUsername" :writerId="post.writerId"></PostDetailWriter>
+        <PostDetailWriter :username="post.writerUsername" :writerId="post.writerId" :writerImageUrl="post.writerImageUrl" :postcreatedDate="post.createdDate"></PostDetailWriter>
         <PostDetailContent :content="post.content"></PostDetailContent>
     </div>
 </template>
